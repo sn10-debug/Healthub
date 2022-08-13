@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: $m-size;
+  }
+
+.active-header{
+  font-weight: bolder;
+  color: red;
+  border-bottom: 2px blue solid;
+}
+
+
+
+
+
+.header__header-link{
+    text-decoration: none;
+    font-size: $s-size;
+    padding: 10px;
+}
+
+.header__action-buttons{
+  padding: 5px;
+}
+
+
+@media (max-width:480px){
+  header{
+    flex-direction: column;
+  }
+  .header__header-links{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
